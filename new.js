@@ -176,6 +176,9 @@ bot.on('message', message => {
         }
     }
 });
+bot.on('ready', () => {
+    bot.user.setStatus("online", "IDA Pro");
+});
 
 bot.login(token);
 
